@@ -30,8 +30,8 @@ class Tutor
   #of the students tutored find the student that was tutored by Jack
   #if there is no student tutored by Jack return nil or false
   def tutored_student?(student)
-    if students.find { |student| courses.tutor}
-  else student  = nil
+     students.find { |student| courses.tutor ||  student  = nil}
+   
         
     end
   end
