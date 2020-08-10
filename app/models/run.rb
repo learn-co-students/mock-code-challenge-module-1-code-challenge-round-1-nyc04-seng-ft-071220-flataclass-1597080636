@@ -23,6 +23,8 @@ history2 = Course.new(tutor_liz, thor, "History101")
 math2 = Course.new(tutor_ron, pipe, "Math101")
 math3 = Course.new(tutor_ron, ace, "Math101")
 swim1 = Course.new(tutor_cath, ace, "Swim101")
+english1 = Course.new(tutor_liz, ace, "English101")
+english2 = Course.new(tutor_liz, thor, "English101")
 
 tutor_ron.courses
 tutor_ron.students
@@ -30,8 +32,8 @@ thor.courses
 thor.tutors
 
 
-
-
+tutor_ron.tutored_student?(mary)
+ace.enrolled_fulltime?
 
 
 binding.pry

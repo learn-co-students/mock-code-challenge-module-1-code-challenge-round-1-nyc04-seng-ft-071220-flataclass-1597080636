@@ -21,5 +21,8 @@ class Student
         self.courses.map(&:tutor)
     end
 
+    def enrolled_fulltime?
+        self.courses.count >= 3
+    end
 
 end

@@ -22,7 +22,7 @@ class Tutor
     end
 
     def tutored_student?(student)
-        
+        self.students.include?(student)
     end
 
 
