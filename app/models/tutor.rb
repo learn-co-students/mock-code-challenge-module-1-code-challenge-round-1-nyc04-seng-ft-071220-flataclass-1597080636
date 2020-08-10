@@ -26,6 +26,7 @@ class Tutor
         courses.map{|course|course.student}
    end
 
+   
     def tutored_student?(student)
         #my students method returns an array of students 
         #the tutor has worked with, so I can use it to help
@@ -35,7 +36,7 @@ class Tutor
         self.students.include?(student)
     end
 
-    
+
 
 
 
