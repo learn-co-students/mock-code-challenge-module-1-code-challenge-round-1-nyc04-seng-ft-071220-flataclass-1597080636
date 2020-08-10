@@ -14,12 +14,4 @@ class Course
         @@all
     end 
 
-    def self.tutor 
-        Course.tutor == self
-    end 
-
-    def self.student
-        self.student == self
-    end 
-
 end

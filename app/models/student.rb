@@ -13,9 +13,7 @@ class Student
     end 
 
     def courses
-        Course.all.select do |course|
-            course.student == self
-        end
+        Course.all.select {|course| course.student == self}
     end 
 
     def tutors

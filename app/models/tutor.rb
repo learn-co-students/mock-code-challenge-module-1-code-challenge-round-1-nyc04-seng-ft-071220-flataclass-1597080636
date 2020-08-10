@@ -13,26 +13,24 @@ class Tutor
     end 
 
     def courses
-        Course.all.select do |course|
-            course.tutor == self
-        end 
+        Course.all.select { |course| course.tutor == self }
     end 
 
     def students
         courses.map(&:student)
     end 
 
-    def tutored_student?(student)
-      student_tutored =  courses.find do |course|
-            course.student == student
-        end 
-        if student_tutored 
-            true
-        else
-            false
-        end 
-    end 
+    # def tutored_student?(student)
+    #   student_tutored =  courses.find do |course|
+    #         course.student == student
+    #     end 
+    #     !!student_tutored 
+        
+    # end 
 
+    def tutored_student?(student)
+        !!courses.find{ |course|course.student == student }          
+    end 
   
 end
 
