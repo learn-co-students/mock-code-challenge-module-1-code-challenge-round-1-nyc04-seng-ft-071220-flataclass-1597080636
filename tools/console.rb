@@ -12,22 +12,24 @@ end
 
 #Students(name_par)
 student1 = Student.new("Bob")
-student2 = Student.new("Sally")
+student2 = Student.new("Anne")
 student3 = Student.new("Tilly")
-student4 = Student.new("Anne")
 
 #Tutors(name_par)
 tutor1 = Tutor.new("Harry")
 tutor2 = Tutor.new("Michael")
 tutor3 = Tutor.new("Nancy")
-tutor4 = Tutor.new("Lily")
+tutor4 = Tutor.new("Andromeda")
 
 #Courses(tutor_instance, student_instance, course_name)
-course1 = Course.new(tutor1, student1, "Math 101")
+course1 = Course.new(tutor1, student3, "Math 101")
 course2 = Course.new(tutor2, student2, "English 103")
 course3 = Course.new(tutor3, student3, "History 204")
 course4 = Course.new(tutor3, student2, "History 101")
 course5 = Course.new(tutor3, student1, "History 501")
+course6 = Course.new(tutor2, student3, "English 211")
+course7 = Course.new(tutor1, student2, "Math 106")
+course8 = Course.new(tutor4, student2, "Science 101")
 
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #

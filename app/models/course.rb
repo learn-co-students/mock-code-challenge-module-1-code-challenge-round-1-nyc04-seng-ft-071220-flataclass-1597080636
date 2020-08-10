@@ -16,11 +16,7 @@ class Course
         @@all
     end
 
-
-
 end
-
-
 
 
 #DONE:
