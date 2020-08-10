@@ -13,5 +13,13 @@ class Student
         @@all
     end
 
+    def courses
+        Course.all.select{|course| course.student == self}
+    end
+
+    def tutors 
+        self.courses.map(&:tutor)
+    end
+
 
 end

@@ -24,6 +24,15 @@ math2 = Course.new(tutor_ron, pipe, "Math101")
 math3 = Course.new(tutor_ron, ace, "Math101")
 swim1 = Course.new(tutor_cath, ace, "Swim101")
 
+tutor_ron.courses
+tutor_ron.students
+thor.courses
+thor.tutors
+
+
+
+
+
 
 binding.pry
 0

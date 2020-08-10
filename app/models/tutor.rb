@@ -13,5 +13,18 @@ class Tutor
         @@all
     end
 
+    def courses
+        Course.all.select{|course| course.tutor == self}
+    end
+
+    def students 
+        self.courses.map(&:student)
+    end
+
+    def tutored_student?(student)
+        
+    end
+
+
 
 end
