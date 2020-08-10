@@ -10,8 +10,10 @@ end
 # This is a convenient place to define variables and/or set up new object instances,
 # so they will be available to test and play around with in your console
 
+Bob = Tutor.new("Bob")
+Student_A = Student.new("Student A")
 
-
+BSB_course = Course.new(Bob, Student_A, "Biology")
 
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #

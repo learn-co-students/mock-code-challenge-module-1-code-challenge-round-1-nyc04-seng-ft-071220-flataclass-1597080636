@@ -5,13 +5,18 @@ class Tutor
     attr_accessor :name
 
     def initialize(name)
-      @name = name
-      @@all << self
+        @name = name
+        @@all << self
     end
 
     def self.all
-    @@all
+        @@all
     end
+
+    # def all_courses
+    #     self.Course.select{|tutor| tutor == self}
+    # end
+
 
 end
 
