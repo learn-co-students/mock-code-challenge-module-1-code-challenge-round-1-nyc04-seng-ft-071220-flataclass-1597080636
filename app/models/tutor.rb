@@ -13,11 +13,15 @@ class Tutor
     end
 
     def courses #returns an array of Course instances associated with the Tutor instance
-        self.Course.all
+        Course.all.select do |course|
+            course.tutor == self
+        end
     end
 
     def students #returns an array of Student instances tutored by the Tutor instance
-        self.Student.all
+        Student.all.select do |student|
+            student.tutor == self
+        end
     end
 
     def tutored_student?(student)
