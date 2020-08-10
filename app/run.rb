@@ -17,6 +17,7 @@ annie = Tutor.new("Annie")
 math = Course.new(sylwia, franklin, "math")
 science = Course.new(annie, marlon, "science")
 spanish = Course.new(annie, franklin, "spanish")
+code = Course.new(annie, franklin, "code")
 
 binding.pry
 0

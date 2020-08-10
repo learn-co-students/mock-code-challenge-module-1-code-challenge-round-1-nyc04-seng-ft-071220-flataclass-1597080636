@@ -19,10 +19,26 @@ class Student
     end 
 
     def tutors
-        courses.map(&:tutor)
+        courses.map(&:tutor).uniq
     end 
 
-end
+    def enrolled_fulltime?
+        if courses.count >= 3
+            true
+        else
+            false
+        end
+
+    end 
+
+end 
+
+    #### Student
+
+# - `Student#enrolled_fulltime?`
+# - returns `true` if the `Student` has enrolled for at least 3 Courses, returns `false` otherwise
+
+
 
 
 
