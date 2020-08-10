@@ -11,5 +11,17 @@ class Student
     def self.all
         @@all
     end
+
+    def courses 
+        Course.all.
+    end
+
+    def tutors 
+        Tutor.all.
+    end
+
+    def enrolled_fulltime
+        Student.all
+    end
 end
 

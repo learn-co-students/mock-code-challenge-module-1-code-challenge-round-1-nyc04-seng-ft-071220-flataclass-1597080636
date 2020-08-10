@@ -1,3 +1,5 @@
+require 'pry'
+
 class Course
 
     attr_accessor :tutor, :student, :course_name
@@ -17,9 +19,10 @@ class Course
 
     def tutor
         Tutor.all.select {|tutor| tutor.course == self}
+        binding.pry
     end
 
-    def student
-        Student.all.select {|student| student.course == self}
-    end
+    # def student
+    #     Student.all.select {|student| student.course == self}
+    # end
 end
