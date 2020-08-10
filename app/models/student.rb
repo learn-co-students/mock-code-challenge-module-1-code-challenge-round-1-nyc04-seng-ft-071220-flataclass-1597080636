@@ -23,12 +23,7 @@ class Student
     end 
 
     def enrolled_fulltime?
-        if courses.count >= 3
-            true
-        else
-            false
-        end
-
+        courses.count >= 3
     end 
 
 end 
