@@ -12,7 +12,10 @@ end
 
 #students are James, Jimmy, and Johnny
 #tutors are   Thames, Timmy, and Tony
-student_James = student.new("James", )
+#courses are  Language, Literature, Lindy_Hop
+james   = Student.new("James")
+thames  = Tutor.new("Thames")
+language= Course.new(thames, james, "Language")
 
 
 

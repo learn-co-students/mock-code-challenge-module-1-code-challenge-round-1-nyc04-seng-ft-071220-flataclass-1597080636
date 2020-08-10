@@ -13,8 +13,5 @@ class Course
     end 
 
     #Object Relationship Methods
-    def tutor
-    end
-    def student
-    end 
+    
 end

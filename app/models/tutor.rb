@@ -1,3 +1,5 @@
+require 'pry'
+
 class Tutor
 
     attr_accessor :name             #name can be changed 
@@ -5,6 +7,7 @@ class Tutor
 
     def initialize(name)            #`Tutor` is initialized with a name (string)
         @name = name                #`Tutor#name`returns Tutor's name
+       
         @@all << self 
     end 
     def self.all                    #Tutor.all` returns array of all `Tutor` instances
@@ -13,6 +16,7 @@ class Tutor
 
     #Object Relationship Methods
     def courses
+        Course.all
     end
     def students
     end 
