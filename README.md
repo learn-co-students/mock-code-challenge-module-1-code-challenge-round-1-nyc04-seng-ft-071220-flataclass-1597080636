@@ -8,6 +8,11 @@ A `Student` has many `Course`s. A `Tutor` has many `Course`s. A `Course` belongs
 
 **Note**: You should draw your domain on paper or on a whiteboard _before you start coding_. Remember to identify a single source of truth for your data.
 
+domain model:
+student>---------------courses------------------<tutor
+
+
+
 ## Topics
 
 - Classes and Instances
@@ -44,68 +49,68 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Student
 
-- `Student#initialize(name)`
+<!-- - `Student#initialize(name)`
   - `Student` is initialized with a name (string)
   - name **can be** changed after the `Student` is initialized
 - `Student#name`
   - returns the `Student`'s name
 - `Student.all`
-  - returns an array of all the `Student` instances that have been initialized
+  - returns an array of all the `Student` instances that have been initialized -->
 
 #### Tutor
 
-- `Tutor#initialize(name)`
+<!-- - `Tutor#initialize(name)`
   - `Tutor` is initialized with a name (string)
-  - name **can be** changed after the Tutor is initialized
-- `Tutor#name`
-  - returns the Tutor's name
-- `Tutor.all`
-  - returns an array of all the `Tutor` instances that have been initialized
+  - name **can be** changed after the Tutor is initialized -->
+<!-- - `Tutor#name`
+  - returns the Tutor's name -->
+<!-- - `Tutor.all`
+  - returns an array of all the `Tutor` instances that have been initialized -->
 
 #### Course
 
-- `Course#initialize(tutor, student, course_name)`
-  - `Course` is initialized with a `Tutor` instance, a `Student` instance, and a course_name (string)
-- `Course#course_name`
-  - returns the course_name for the `Course` instance
-- `Course.all`
-  - returns an array of all initialized `Course` instances
+<!-- - `Course#initialize(tutor, student, course_name)`
+  - `Course` is initialized with a `Tutor` instance, a `Student` instance, and a course_name (string) -->
+<!-- - `Course#course_name`(changed to course_name_method) -->
+  <!-- - returns the course_name for the `Course` instance -->
+<!-- - `Course.all` -->
+  <!-- - returns an array of all initialized `Course` instances -->
 
 ### Object Relationship Methods
 
 #### Course
 
-- `Course#tutor`
-  - returns the `Tutor` instance associated with the `Course` instance
-- `Course#student`
-  - returns the `Student` instance associated with the `Course` instance
+<!-- - `Course#tutor`
+  - returns the `Tutor` instance associated with the `Course` instance -->
+<!-- - `Course#student`
+  - returns the `Student` instance associated with the `Course` instance -->
 
 #### Tutor
 
-- `Tutor#courses`
-  - returns an array of `Course` instances associated with the `Tutor` instance.
-- `Tutor#students`
-  - returns an array of `Student` instances tutored by the `Tutor` instance.
+<!-- - `Tutor#courses`
+  - returns an array of `Course` instances associated with the `Tutor` instance. -->
+<!-- - `Tutor#students`
+  - returns an array of `Student` instances tutored by the `Tutor` instance. -->
 
 #### Student
 
-- `Student#courses`
-  - returns an array of all the `Course` instances for the `Student`.
-- `Student#tutors`
-  - returns an array of all of the `Tutor` instances that are tutoring the `Student`.
+<!-- - `Student#courses`
+  - returns an array of all the `Course` instances for the `Student`. -->
+<!-- - `Student#tutors`
+  - returns an array of all of the `Tutor` instances that are tutoring the `Student`. -->
 
 ### Aggregate and Association Methods
 
 #### Tutor
 
-- `Tutor#tutored_student?(student)`
+<!-- - `Tutor#tutored_student?(student)`
   - a `Student` instance is the only argument
-  - returns `true` if the `Tutor` has tutored this `Student` (if there is a `Course` instance that has this `Tutor` and `Student`), returns `false` otherwise
+  - returns `true` if the `Tutor` has tutored this `Student` (if there is a `Course` instance that has this `Tutor` and `Student`), returns `false` otherwise -->
 
 #### Student
 
-- `Student#enrolled_fulltime?`
-   - returns `true` if the `Student` has enrolled for at least 3 Courses, returns `false` otherwise
+<!-- - `Student#enrolled_fulltime?`
+   - returns `true` if the `Student` has enrolled for at least 3 Courses, returns `false` otherwise -->
 
 ## Rubric
 
