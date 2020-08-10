@@ -33,11 +33,7 @@ class Student
 
 end 
 
-    #### Student
-
-# - `Student#enrolled_fulltime?`
-# - returns `true` if the `Student` has enrolled for at least 3 Courses, returns `false` otherwise
-
+   
 
 
 
