@@ -24,14 +24,14 @@ class Tutor
         end
     end
 
-    def tutored_student?(student)
-        Course.all.select do |course|
+    def tutored_student?(student)  #returns true if the Tutor has tutored this Student 
+        Course.all.select do |course| #(if there is a Course instance that has this Tutor and Student), returns false otherwise
             course.tutor && course.student
         end
     end
 
-    def enrolled_fulltime?
-        Student.all.find |student|
+    def enrolled_fulltime?    #returns true if the Student has enrolled for at least 3 Courses, returns false otherwise
+        Student.all.find do |student|
             student.course == 3
         end
     end
