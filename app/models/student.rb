@@ -18,7 +18,7 @@ class Student
     end
 
     def tutors
-        Tutor.all.select { |tutor| tutor.student }# returns an array of all of the Tutor instances that are tutoring the Student.
+        self.courses.map { |course| course.tutor }# returns an array of all of the Tutor instances that are tutoring the Student.
     end
 
     def enrolled_fulltime?#need to review
