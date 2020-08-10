@@ -21,10 +21,10 @@ attr_accessor :tutor, :student, :course_name
         @@all
     end
 
-    
+
 # - `Course#tutor`
 # - returns the `Tutor` instance associated with the `Course` instance
-# - `Course#student`
+# - `Courgise#student`
 # - returns the `Student` instance associated with the `Course` instance
 
 
