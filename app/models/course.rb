@@ -12,6 +12,4 @@ class Course
     def self.all
         @@all
     end
-
-
 end
