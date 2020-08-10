@@ -44,67 +44,67 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Student
 
-- `Student#initialize(name)`
-  - `Student` is initialized with a name (string)
+- [x] `Student#initialize(name)`
+  - [x] `Student` is initialized with a name (string)
   - name **can be** changed after the `Student` is initialized
-- `Student#name`
+- [x] `Student#name`
   - returns the `Student`'s name
-- `Student.all`
+- [x] `Student.all`
   - returns an array of all the `Student` instances that have been initialized
 
 #### Tutor
 
-- `Tutor#initialize(name)`
+- [x]`Tutor#initialize(name)`
   - `Tutor` is initialized with a name (string)
   - name **can be** changed after the Tutor is initialized
-- `Tutor#name`
+- [x]`Tutor#name`
   - returns the Tutor's name
-- `Tutor.all`
+- [x]`Tutor.all`
   - returns an array of all the `Tutor` instances that have been initialized
 
 #### Course
 
-- `Course#initialize(tutor, student, course_name)`
+- [x] `Course#initialize(tutor, student, course_name)`
   - `Course` is initialized with a `Tutor` instance, a `Student` instance, and a course_name (string)
-- `Course#course_name`
+- [x] `Course#course_name`
   - returns the course_name for the `Course` instance
-- `Course.all`
+- [x] `Course.all`
   - returns an array of all initialized `Course` instances
 
 ### Object Relationship Methods
 
 #### Course
 
-- `Course#tutor`
+- [x] `Course#tutor`
   - returns the `Tutor` instance associated with the `Course` instance
-- `Course#student`
+- [x] `Course#student`
   - returns the `Student` instance associated with the `Course` instance
 
 #### Tutor
 
-- `Tutor#courses`
+- [x] `Tutor#courses`
   - returns an array of `Course` instances associated with the `Tutor` instance.
-- `Tutor#students`
+- [x] `Tutor#students`
   - returns an array of `Student` instances tutored by the `Tutor` instance.
 
 #### Student
 
-- `Student#courses`
+- [x] `Student#courses`
   - returns an array of all the `Course` instances for the `Student`.
-- `Student#tutors`
+- [x] `Student#tutors`
   - returns an array of all of the `Tutor` instances that are tutoring the `Student`.
 
 ### Aggregate and Association Methods
 
 #### Tutor
 
-- `Tutor#tutored_student?(student)`
+- [] `Tutor#tutored_student?(student)`
   - a `Student` instance is the only argument
   - returns `true` if the `Tutor` has tutored this `Student` (if there is a `Course` instance that has this `Tutor` and `Student`), returns `false` otherwise
 
 #### Student
 
-- `Student#enrolled_fulltime?`
+- [] `Student#enrolled_fulltime?`
    - returns `true` if the `Student` has enrolled for at least 3 Courses, returns `false` otherwise
 
 ## Rubric
