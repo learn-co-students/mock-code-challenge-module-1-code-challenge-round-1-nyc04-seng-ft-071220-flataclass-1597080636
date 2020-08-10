@@ -4,13 +4,22 @@ class Student
 
     @@all = []
 
-    def intialize(name_param)
+    def initialize(name_param)
         @name = name_param 
         @@all << self
     end
 
     def self.all 
         @@all 
+    end
+
+    def courses
+        Course.all.select { |course| course.student == self }
+    end
+
+    def tutors
+        tutor_inst_array = self.courses.map { |course| course.tutor }
+        tutor_inst_array.uniq
     end
 
 end

@@ -8,11 +8,12 @@ class Course
         @tutor = tutor_param
         @student = student_param
         @course_name = course_name_param
+        @@all << self
     end
 
     def self.all 
         @@all 
     end
-    
+
 
 end
