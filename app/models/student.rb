@@ -26,4 +26,12 @@ class Student
         end
     end
 
+    def enrolled_fulltime?
+        if self.all_courses.count > 3
+            return true
+        else
+            return false 
+        end
+    end
+
 end

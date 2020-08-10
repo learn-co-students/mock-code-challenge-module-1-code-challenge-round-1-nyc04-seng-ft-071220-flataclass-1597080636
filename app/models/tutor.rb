@@ -28,6 +28,16 @@ class Tutor
         end 
     end
 
+    def tutored_student?(student)
+        self.all_students.find do |each_student|
+            if student == each_student
+                return true 
+            else
+                return false
+            end
+        end
+    end
+
 
 end
 
