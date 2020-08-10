@@ -22,8 +22,12 @@ class Tutor
         students_inst_array.uniq
     end
 
-    
-
-
+    def tutored_student?(student_param)#instance
+        if Student.all.include? student_param
+            self.students.include? student_param
+        else
+            "Not a student."
+        end
+    end
 
 end

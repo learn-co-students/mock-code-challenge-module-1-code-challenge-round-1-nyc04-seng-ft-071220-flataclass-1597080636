@@ -22,4 +22,8 @@ class Student
         tutor_inst_array.uniq
     end
 
+    def enrolled_fulltime?
+        self.courses.count >= 3
+    end
+
 end
