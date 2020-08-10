@@ -1,3 +1,5 @@
+
+
 # require and load the environment file
 require_relative '../config/environment.rb'
 
@@ -10,6 +12,14 @@ end
 # This is a convenient place to define variables and/or set up new object instances,
 # so they will be available to test and play around with in your console
 
+
+
+
+tutor = Tutor.new("Jorge")
+puts totor.name 
+
+student = Student.new("Earl")
+puts student.name
 
 
 
