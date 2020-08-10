@@ -11,9 +11,15 @@ end
 # so they will be available to test and play around with in your console
 
 Bob = Tutor.new("Bob")
-Student_A = Student.new("Student A")
+Anna = Tutor.new("Anna")
 
-BSB_course = Course.new(Bob, Student_A, "Biology")
+Student_A = Student.new("Student A")
+Student_B = Student.new("Student B")
+Student_C = Student.new("Student C")
+
+BAB = Course.new(Bob, Student_A, "Biology")
+ABC = Course.new(Anna, Student_B, "Chemistry")
+BCP = Course.new(Bob, Student_C, "Physics")
 
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #
