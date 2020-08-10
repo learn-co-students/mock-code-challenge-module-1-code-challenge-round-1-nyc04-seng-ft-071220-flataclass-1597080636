@@ -1,6 +1,6 @@
 class Student
 
-    attr_accessor :student_name, :tutor, :course# using attr_accessor => name can be changed after the Student is initialized
+    attr_accessor :student_name# using attr_accessor => name can be changed after the Student is initialized
 
     @@all = []
 
@@ -14,15 +14,15 @@ class Student
     end
 
     def courses
-        Course.all.select { |course| course.student }# returns an array of all the Course instances for the Student.
+        Course.all.select { |course| course.student == self }# returns an array of all the Course instances for the Student.
     end
 
     def tutors
         Tutor.all.select { |tutor| tutor.student }# returns an array of all of the Tutor instances that are tutoring the Student.
     end
 
-    def enrolled_fulltime?
-        return true if self.courses > 3
+    def enrolled_fulltime?#need to review
+        return true if self.courses.count > 3
     end
 
 end

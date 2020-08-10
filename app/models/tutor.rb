@@ -1,6 +1,6 @@
 class Tutor
     
-    attr_accessor :tutor_name, :student, :course# using attr_accessor => name can be changed after the Tutor is initialized
+    attr_accessor :tutor_name# using attr_accessor => name can be changed after the Tutor is initialized
 
     @@all = []
 
@@ -18,18 +18,12 @@ class Tutor
     end
 
     def students
-        Student.all.select { |student| student.tutor == self}
+        self.courses.map { |course| course.student}
     end
 
-    def tutored_student?(student)
+    def tutored_student?(student)#need to review
         self.students.includes?(student)
     end
 
 
 end
-
-
-# Tutor#courses
-# returns an array of Course instances associated with the Tutor instance.
-# Tutor#students
-# returns an array of Student instances tutored by the Tutor instance.
