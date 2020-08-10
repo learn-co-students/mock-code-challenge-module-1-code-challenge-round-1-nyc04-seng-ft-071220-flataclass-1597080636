@@ -8,6 +8,12 @@ A `Student` has many `Course`s. A `Tutor` has many `Course`s. A `Course` belongs
 
 **Note**: You should draw your domain on paper or on a whiteboard _before you start coding_. Remember to identify a single source of truth for your data.
 
+Student -< Course >- Tutor
+  - Course belongs to Student 
+  - Course belongs to Tutor
+  - Student has many Tutor through Course
+  - Tutor has many  Student through Course
+
 ## Topics
 
 - Classes and Instances

@@ -10,8 +10,22 @@ end
 # This is a convenient place to define variables and/or set up new object instances,
 # so they will be available to test and play around with in your console
 
+#Students(name_par)
+student1 = Student.new("Bob")
+student2 = Student.new("Sally")
+student3 = Student.new("Tilly")
+student4 = Student.new("Anne")
 
+#Tutors(name_par)
+tutor1 = Tutor.new("Harry")
+tutor2 = Tutor.new("Michael")
+tutor3 = Tutor.new("Nancy")
+tutor4 = Tutor.new("Lily")
 
+#Courses(tutor_instance, student_instance, course_name)
+course1 = Course.new(tutor1, student1, "Math 101")
+course2 = Course.new(tutor2, student2, "English 103")
+course3 = Course.new(tutor3, student3, "History 204")
 
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #
