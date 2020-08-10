@@ -30,10 +30,10 @@ tutor_ron.courses
 tutor_ron.students
 thor.courses
 thor.tutors
-
-
 tutor_ron.tutored_student?(mary)
+tutor_ron.tutored_student?(beth)
 ace.enrolled_fulltime?
+fenny.enrolled_fulltime?
 
 
 binding.pry
