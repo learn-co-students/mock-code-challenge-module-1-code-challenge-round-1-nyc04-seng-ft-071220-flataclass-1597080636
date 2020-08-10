@@ -12,7 +12,18 @@ class Student
         @@all 
     end 
 
+    def courses
+        Course.all.select do |course|
+            course.student == self
+        end
+    end 
+
+    def tutors
+        courses.map(&:tutor)
+    end 
+
 end
+
 
 
 

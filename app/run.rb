@@ -5,15 +5,15 @@ require_relative "models/tutor.rb"
 require 'pry'
 
 
-
+# students
 franklin = Student.new('Franklin')
 marlon = Student.new("Marlon")
 
+# tutors
 sylwia = Tutor.new("Sylwia")
 annie = Tutor.new("Annie")
 
-# - `Course#initialize(tutor, student, course_name)`
-
+# courses
 math = Course.new(sylwia, franklin, "math")
 science = Course.new(annie, marlon, "science")
 spanish = Course.new(annie, franklin, "spanish")

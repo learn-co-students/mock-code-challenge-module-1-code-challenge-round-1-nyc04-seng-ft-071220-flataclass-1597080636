@@ -11,6 +11,17 @@ class Tutor
     def self.all
         @@all
     end 
+
+    def courses
+        Course.all.select do |course|
+            course.tutor == self
+        end 
+    end 
+
+    def students
+        courses.map(&:student)
+    end 
+
   
 end
 
