@@ -25,10 +25,14 @@ class Tutor
     end
 
     def tutored_student?(student)
+        Course.all.select do |course|
+            course.tutor && course.student
+        end
     end
 
     def enrolled_fulltime?
-        if 
+        Student.all.find |student|
+            student.course == 3
         end
     end
 
