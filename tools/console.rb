@@ -30,6 +30,9 @@ stutor2 = sylwia.tutored_student?(sam)
 sylwia_courses = sylwia.courses
 eric_courses = eric.courses
 
+mstudent = math.student
+artstudents = art.student
+
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #
 binding.pry
