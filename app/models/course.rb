@@ -16,4 +16,15 @@ class Course
         @@all
     end
 
+
+
 end
+
+
+
+
+#DONE:
+# - `Course#tutor`
+#   - returns the `Tutor` instance associated with the `Course` instance
+# - `Course#student`
+#   - returns the `Student` instance associated with the `Course` instance

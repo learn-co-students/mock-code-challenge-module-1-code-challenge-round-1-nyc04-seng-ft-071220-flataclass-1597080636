@@ -26,6 +26,8 @@ tutor4 = Tutor.new("Lily")
 course1 = Course.new(tutor1, student1, "Math 101")
 course2 = Course.new(tutor2, student2, "English 103")
 course3 = Course.new(tutor3, student3, "History 204")
+course4 = Course.new(tutor3, student2, "History 101")
+course5 = Course.new(tutor3, student1, "History 501")
 
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #
