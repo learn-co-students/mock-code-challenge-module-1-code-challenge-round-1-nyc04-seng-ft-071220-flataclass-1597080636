@@ -19,9 +19,9 @@ Student_B = Student.new("Student B")
 Student_C = Student.new("Student C")
 
 BAB = Course.new(Bob, Student_A, "Biology")
-ABC = Course.new(Anna, Student_B, "Chemistry")
-BCP = Course.new(Bob, Student_C, "Physics")
-ABBC = Course.new(Tom, Student_B, "Biochemistry")
+ABC = Course.new(Anna, Student_A, "Chemistry")
+BCP = Course.new(Bob, Student_A, "Physics")
+ABBC = Course.new(Tom, Student_A, "Biochemistry")
 
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #
