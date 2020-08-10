@@ -10,7 +10,9 @@ end
 # This is a convenient place to define variables and/or set up new object instances,
 # so they will be available to test and play around with in your console
 
-
+#students are James, Jimmy, and Johnny
+#tutors are   Thames, Timmy, and Tony
+student_James = student.new("James", )
 
 
 
