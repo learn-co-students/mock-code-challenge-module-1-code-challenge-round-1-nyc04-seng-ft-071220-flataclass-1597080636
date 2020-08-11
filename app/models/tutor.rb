@@ -25,6 +25,18 @@ class Tutor
     def students 
         self.courses.map { |course| course.student }
     end
+
+    # Student -< Course >- Tutor
+
+    #1. define the method -- tutored_student?(student_instance)
+    #2. go through all Course instances 
+    #3. find all of this tutor's students
+    #4. see if those students match up with the student_instance argument 
+
+    def tutored_student?(student_instance)
+        self.students.include?(student_instance)
+    end
+
     
 end
 
@@ -44,3 +56,6 @@ end
 #   - returns an array of `Course` instances associated with the `Tutor` instance.
 # - `Tutor#students`
 #   - returns an array of `Student` instances tutored by the `Tutor` instance.
+# - `Tutor#tutored_student?(student)`
+#   - a `Student` instance is the only argument
+#   - returns `true` if the `Tutor` has tutored this `Student` (if there is a `Course` instance that has this `Tutor` and `Student`), returns `false` otherwise

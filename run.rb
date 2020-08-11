@@ -15,6 +15,8 @@ snape = Tutor.new("snape")
 
 king_of_pirate = Course.new(roshi, luffy, "Pirate 101")
 dark_arts = Course.new(snape, chopper, "Dark Arts")
+ships = Course.new(eric, chopper, "Ships 101")
+pirate = Course.new(roshi, chopper, "Pirate DZ")
 
 binding.pry
 0
