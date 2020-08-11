@@ -28,8 +28,6 @@ course4=Course.new(eric, nunny, "react")
 course5=Course.new(eric,daisy,"react")
 course6=Course.new(annie,daisy, "javascript")
 
-course1.tutor
-course1.student
 daisy.courses
 daisy.tutors
 annie.courses
