@@ -10,12 +10,17 @@ end
 # This is a convenient place to define variables and/or set up new object instances,
 # so they will be available to test and play around with in your console
 
-#students are James, Jimmy, and Johnny
-#tutors are   Thames, Timmy, and Tony
+#students are James, Jimmy,
+#tutors are   Thames, Timmy,
 #courses are  Language, Literature, Lindy_Hop
-james   = Student.new("James")
-thames  = Tutor.new("Thames")
-language= Course.new(thames, james, "Language")
+james     = Student.new("James")
+jimmy     = Student.new("Jimmy")
+thames    = Tutor.new("Thames")
+timmy     = Tutor.new("Timmy")
+language  = Course.new(thames, james, "Language")
+literature= Course.new(timmy, jimmy, "Literature")
+lindy_hop = Course.new(thames, jimmy, "Lindy_Hop")
+language2= Course.new(thames, jimmy, "language2")
 
 
 
